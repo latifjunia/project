@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ccc;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    height: 50px;
+    width: auto;  
+  }  
+  
+  .navbar {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .text-section {
+    background-color: #666;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .slider {
+    max-width: 80%;
+    margin: 20px auto;
+  }
+  
+  .slider-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    width: 300px;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  
+  .image-container {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #666;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .prev {
+    left: 190px;
+  }
+  
+  .next {
+    right: 190px;
+  }
+  
+  .slider-description {
+    margin-top: 10px;
+    background-color: #666;
+    color: white;
+    padding: 10px;
+  }
+  
+  footer {
+    background-color: #ccc;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+  
+    button {
+      padding: 5px;
+    }
+  }

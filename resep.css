@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ccc;
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;  
+  }  
+
+.navbar a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.carousel {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-box {
+    background-color: #ddd;
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.arrows span {
+    margin: 0 20px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.carousel-text {
+    background-color: #555;
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+.section-title {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column; /* Mengatur arah ke vertikal */
+    gap: 20px; /* Jarak antar item */
+}
+
+.recipe-box {
+    display: flex;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-image {
+    background-color: #ddd; /* Warna latar belakang jika gambar tidak ada */
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Pastikan gambar menyesuaikan */
+    border-radius: 5px; /* Membuat sudut melengkung */
+}
+
+
+.recipe-details h3 {
+    margin-bottom: 5px;
+}
+
+.recipe-details p {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+footer {
+    background-color: #ccc;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.recipe-details {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.recipe-details h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.recipe-details ul, .recipe-details ol {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.recipe-details ul li, .recipe-details ol li {
+    margin-bottom: 5px;
+}
+
+.recipe-details p {
+    margin: 10px 0;
+    font-weight: bold;
+}

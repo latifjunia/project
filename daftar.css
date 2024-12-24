@@ -1,0 +1,144 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ccc;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    height: 50px;
+    width: auto;
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .search-bar input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .search-bar button {
+    padding: 10px;
+    background-color: #666;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  /* Section Title */
+  .text-section {
+    background-color: #666;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  /* Slider */
+  .slider {
+    position: relative;
+    max-width: 80%;
+    margin: 20px auto;
+    overflow: hidden; /* Mencegah konten meluber */
+  }
+  
+  .slider-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Jarak antar kartu */
+  }
+  
+  /* Card */
+  .card {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Warna latar belakang kartu */
+    border: 1px solid #ccc; /* Border untuk kotak */
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .card p {
+    margin: 10px 0;
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .button:hover {
+    background-color: darkgray;
+  }
+  /* Footer */
+  footer {
+    background-color: #ccc;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  /* Responsivitas */
+  @media (max-width: 768px) {
+    .search-bar input {
+      width: 60%;
+    }
+  
+    .card {
+      flex: 1 1 calc(50% - 20px); /* Dua kolom di layar sedang */
+      max-width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      flex: 1 1 100%; /* Satu kolom di layar kecil */
+      max-width: 100%;
+    }
+  }
+  
